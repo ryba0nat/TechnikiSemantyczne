@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<wypozyczalniaSprzetuNarciarskiego>
+
+
+  <klienci>
+    <klient>
+      <imie>Jan</imie>
+      <nazwisko>Kowalski</nazwisko>
+      <pesel>12345678910</pesel>
+    </klient>
+
+    <klient>
+      <imie>Anna</imie>
+      <nazwisko>Nowak</nazwisko>
+      <pesel>10987654321</pesel>
+    </klient>
+  <klient><imie>Piotr</imie><nazwisko>Wiśniewski</nazwisko><pesel>99887766555</pesel>
+  </klient><klient><imie>Joanna</imie><nazwisko>Kowalska</nazwisko><pesel>12345678901</pesel></klient></klienci>
+
+  <karnety>
+    <karnet>
+      <idKarnetu>1</idKarnetu>
+      <rodzaj>ulgowy</rodzaj>
+      <czasTrwania>dzienny</czasTrwania>
+      <cena>89,99</cena>
+    </karnet>
+
+    <karnet>
+      <idKarnetu>2</idKarnetu>
+      <rodzaj>ulgowy</rodzaj>
+      <czasTrwania>tygodniowy</czasTrwania>
+      <cena>219,99</cena>
+    </karnet>
+
+    <karnet>
+      <idKarnetu>3</idKarnetu>
+      <rodzaj>normalny</rodzaj>
+      <czasTrwania>dzienny</czasTrwania>
+      <cena>109,99</cena>
+    </karnet>
+
+    <karnet>
+      <idKarnetu>4</idKarnetu>
+      <rodzaj>normalny</rodzaj>
+      <czasTrwania>tygodniowy</czasTrwania>
+      <cena>289,99</cena>
+    </karnet>
+  <karnet><idKarnetu>1</idKarnetu><rodzaj>ulgowy</rodzaj><czasTrwania>tygodniowy</czasTrwania><cena>23</cena></karnet></karnety>
+
+  <sprzety>
+    <sprzet>
+      <idSprzetu>1</idSprzetu>
+      <rodzaj>snowboard</rodzaj>
+      <specyfikacja>freeride</specyfikacja>
+      <rozmiar>200</rozmiar>
+      <cenaZaDzien>50</cenaZaDzien>
+    </sprzet>
+
+    <sprzet>
+      <idSprzetu>2</idSprzetu>
+      <rodzaj>narty</rodzaj>
+      <specyfikacja>freestyle</specyfikacja>
+      <rozmiar>215</rozmiar>
+      <cenaZaDzien>40</cenaZaDzien>
+    </sprzet>
+  </sprzety>
+
+  <zakupioneKarnety>
+    <zakupionyKarnet>
+      <idKarnetu>1</idKarnetu>
+      <dataZakupu>2025-01-21</dataZakupu>
+    </zakupionyKarnet>
+
+    <zakupionyKarnet>
+      <idKarnetu>4</idKarnetu>
+      <dataZakupu>2025-01-22</dataZakupu>
+    </zakupionyKarnet>
+  </zakupioneKarnety>
+
+  <wypozyczonia>
+    <wypozyczenie>
+      <idSprzetu>1</idSprzetu>
+      <dataWypozyczenia>2025-01-21</dataWypozyczenia>
+      <dataZwrotu>2025-01-21</dataZwrotu>
+      <cena>50</cena>
+      <peselWypozyczajacego>12345678910</peselWypozyczajacego>
+    </wypozyczenie>
+
+    <wypozyczenie>
+      <idSprzetu>2</idSprzetu>
+      <dataWypozyczenia>2025-01-22</dataWypozyczenia>
+      <dataZwrotu>2025-01-29</dataZwrotu>
+      <cena>280</cena>
+      <peselWypozyczajacego>10987654321</peselWypozyczajacego>
+    </wypozyczenie>
+  <wypozyczenie><idSprzetu>1</idSprzetu><dataWypozyczenia>2025-02-01</dataWypozyczenia><dataZwrotu>2025-03-01</dataZwrotu><cena>24</cena><peselWypozyczajacego>12345678901</peselWypozyczajacego></wypozyczenie></wypozyczonia>
+</wypozyczalniaSprzetuNarciarskiego>

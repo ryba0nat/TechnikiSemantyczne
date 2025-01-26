@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+  <xs:element name="wypozyczalniaSprzetuNarciarskiego">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="klienci">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="klient" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="imie" type="xs:string"/>
+                    <xs:element name="nazwisko" type="xs:string"/>
+                    <xs:element name="pesel" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="karnety">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="karnet" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="idKarnetu" type="xs:integer"/>
+                    <xs:element name="rodzaj" type="xs:string"/>
+                    <xs:element name="czasTrwania" type="xs:string"/>
+                    <xs:element name="cena" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="sprzety">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sprzet" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="idSprzetu" type="xs:integer"/>
+                    <xs:element name="rodzaj" type="xs:string"/>
+                    <xs:element name="specyfikacja" type="xs:string"/>
+                    <xs:element name="rozmiar" type="xs:integer"/>
+                    <xs:element name="cenaZaDzien" type="xs:decimal"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="zakupioneKarnety">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="zakupionyKarnet" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="idKarnetu" type="xs:integer"/>
+                    <xs:element name="dataZakupu" type="xs:date"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+
+        <xs:element name="wypozyczonia">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="wypozyczenie" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="idSprzetu" type="xs:integer"/>
+                    <xs:element name="dataWypozyczenia" type="xs:date"/>
+                    <xs:element name="dataZwrotu" type="xs:date"/>
+                    <xs:element name="cena" type="xs:decimal"/>
+                    <xs:element name="peselWypozyczajacego" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
