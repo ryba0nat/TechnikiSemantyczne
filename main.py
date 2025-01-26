@@ -36,7 +36,7 @@ def validate_date(date_str):
 # walidacja id
 def is_unique_id(root, element_name, id_value):
     return all(item.find(element_name).text != id_value for item in root.findall(f".//{element_name}"))
-
+#proba
 # wyszukiwanie klienta
 def find_client():
     tree = ET.parse(xml_file)
