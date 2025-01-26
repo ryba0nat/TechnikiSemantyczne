@@ -6,8 +6,8 @@ Został napisany w języku Python i wykorzystuje XML do przechowywania danych or
 Aplikacja umożliwia użytkownikowi dodawanie klientów, sprzętu, karnetów, wypożyczeń oraz wyszukiwanie klientów.
 
 ## Autorzy  
-- Osoba 1: Natalia Świderska
-- Osoba 2: Patrycja Zachara
+-  Natalia Świderska
+-  Patrycja Zachara
 
 ## Wymagane środowisko  
 - **Python 3.x** (zalecana wersja 3.9+)  
