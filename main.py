@@ -53,7 +53,7 @@ def find_client():
 
     print("Nie znaleziono klienta o podanym PESEL.")
 
-# nowy klinet
+#dodanie nowego klienta
 def add_client():
     tree = ET.parse(xml_file)
     root = tree.getroot()
